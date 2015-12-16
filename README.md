@@ -31,9 +31,9 @@ Result:
 
 * [requests](http://docs.python-requests.org/en/latest/)
 
-You can install requests via pip:
+You can install requests via pip (you may need sudo access):
 
-    pip install requests tweepy
+    pip install requests
     
 ## How to get the API key:
 To get the key, please click [here](http://cs.unm.edu/~chavoshi/demo/api.html)
