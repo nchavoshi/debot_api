@@ -1,7 +1,12 @@
 # DeBot Python API
 A Python API for [DeBot](http://cs.unm.edu/~chavoshi/demo/).
 
-## Quickstart
+## Install instructions
+
+1. Clone this repository and enter the folder:
+2. `python setup.py install`
+
+## How to Use
 
 ```python
 import debot
@@ -22,21 +27,15 @@ Result:
 </response>
 ```
 
-## Install instructions
-
-1. Clone this repository and enter the folder:
-2. `python setup.py install`
-
 ## Dependencies
 
-### Python dependencies
 * [requests](http://docs.python-requests.org/en/latest/)
 
 You can install requests via pip:
 
     pip install requests tweepy
     
-### How to get the API key:
+## How to get the API key:
 To get the key, please click [here](http://cs.unm.edu/~chavoshi/demo/api.html)
 
 
