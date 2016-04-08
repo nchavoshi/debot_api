@@ -5,7 +5,7 @@ class DeBot(object):
 	
 	def __init__(self, api_key):
 		self.api_key = api_key	
-		self._api_endpoint = 'http://cs.unm.edu/~chavoshi/demo/api.php'
+		self._api_endpoint = 'http://cs.unm.edu/~chavoshi/debot/api.php'
 
 	def check_user(self, screen_name):
 		r = requests.post(self._api_endpoint, data={'api_key':self.api_key, 'srv_type':'1', 'user_name':screen_name})
