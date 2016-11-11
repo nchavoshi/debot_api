@@ -13,7 +13,7 @@ Given a date as the input, the "get_bots_list" function returns all the clusters
 import debot
 
 db = debot.DeBot('your_api_key')
-db.get_bots_date_range('2015-12-04','2015-12-06')
+db.get_bots_list('2015-12-04','2015-12-06')
 ```
 
 Output:
