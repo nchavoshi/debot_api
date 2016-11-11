@@ -8,24 +8,17 @@ A Python API for [DeBot](http://cs.unm.edu/~chavoshi/demo/).
 
 
 ## Get the list of the detected bots
-Given a date range, the "get_bot_list" function returns the all the clusters of bots detected in the given period of time.
+Given a date range, the "get_bots_date_range" function returns the all the clusters of bots that Debot detected in the given period of time. In the following example, we want to get the list of the bots detected between December 4th and December 6th 2015. The output shows 2 clusters on December 4th, 1 cluster on December 5th, and 1 cluster on December 6th.
 ```python
 import debot
 
 db = debot.DeBot('your_api_key')
-db.check_user('loveforlover_01')
+db.get_bots_date_range('2015-12-04','2015-12-06')
 ```
 
 Output:
 ```xml
 <?xml version="1.0"?>
-<response status="success">
- <user>loveforlover_01</user>
- <dates>
-  <date count="1">2015-10-28</date>
-  <date count="4">2015-12-04</date>
- </dates>
-</response>
 ```
 
 ## Check a Twitter Account
