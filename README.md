@@ -1,5 +1,5 @@
 # DeBot Python API
-A Python API for [DeBot](http://cs.unm.edu/~chavoshi/demo/).
+A Python API for [DeBot](http://cs.unm.edu/~chavoshi/debot).
 
 ## Install instructions
 
