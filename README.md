@@ -7,7 +7,8 @@ A Python API for [DeBot](http://cs.unm.edu/~chavoshi/demo/).
 2. `python setup.py install`
 
 ## How to Use
-
+DeBot API has 2 main functions for the user to get the data: "check_user(user)" and "check_date(date)".
+1. check_user(user): Given a Twitter user name, this function checks whether or not DeBot has detected the given account as a bot so far. If yes, it also returns the date of detection and the number of times that account was detected as a bot. In the following example, we query the account "loveforlover_01", and the output shows that DeBot detected this account as a bot on 2015-10-28 once, and on 2015-12-04 4 times.  
 ```python
 import debot
 
