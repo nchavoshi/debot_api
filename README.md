@@ -66,6 +66,6 @@ You can install requests via pip (you may need sudo access):
     pip install requests
     
 ## How to get the API key:
-To get the key, please click [here](http://cs.unm.edu/~chavoshi/demo/api.html)
+To get the key, please click [here].(http://www.cs.unm.edu/~chavoshi/debot/api.html)
 
 
