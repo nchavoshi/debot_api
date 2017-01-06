@@ -23,8 +23,12 @@ class DeBot(object):
 		r = requests.post(self._api_endpoint, data={'api_key':self.api_key, 'srv_type':'3', 'date_1':_date, 'date_2':_date})
 		return r.text
 		
-	def get_user_threshold(self, threshold, overall=1):
+	def get_frequent_bots(self, threshold, overall=1):
 		r = requests.post(self._api_endpoint, data={'api_key':self.api_key, 'srv_type':'4', 'threshold':threshold, 'overall':overall})
+		return r.text
+	
+	def get_related_bots(self, topic):
+		r = requests.post(self._api_endpoint, data={'api_key':self.api_key, 'srv_type':'5', 'topic':topic})
 		return r.text
 		
 	
