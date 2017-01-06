@@ -35,9 +35,13 @@ Output:
   .
  </cluster>
  <cluster cluster_id="2" size="3">
-  <user>MadridReal</user>
-  <user>nada1998</user>
-  <user>cup201711</user>
+  <user>
+   <id>2564853141</id>
+   <screen_name>MadridReal</screen_name>
+  </user>
+  .
+  .
+  .
  </cluster>
 </response>
 ```
@@ -55,11 +59,22 @@ Output:
 ```xml
 <?xml version="1.0"?>
 <response status="success">
- <user>loveforlover_01</user>
- <dates>
-  <date count="1">2015-10-28</date>
-  <date count="4">2015-12-04</date>
- </dates>
+ <user>
+  <id>6532574884</id>
+  <screen_name>loveforlover_01</screen_name>
+  <dates>
+   <date count="1">2015-10-28</date>
+   <date count="4">2015-12-04</date>
+  </dates>
+ </user>
+ <user>
+  <id>1498736854</id>
+  <screen_name>loveforlover_01</screen_name>
+  <dates>
+   <date count="2">2016-02-22</date>
+   <date count="1">2016-04-06</date>
+  </dates>
+ </user>
 </response>
 ```
 
