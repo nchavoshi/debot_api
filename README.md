@@ -22,12 +22,18 @@ Output:
 <response status="success">
  <date>2015-12-04</date>
  <cluster cluster_id="1" size="5">
-  <user>ma_arrioja</user>
-  <user>Napebar23Perez</user>
-  <user>HectorGarasUh</user>
-  <user>GonzalezVictor_</user>
-  <user>GladyoscariS</user>
-  </cluster>
+  <user>
+   <id>12359852135</id>
+   <screen_name>ma_arrioja</screen_name>
+  </user>
+  <user>
+   <id>85642135261</id>
+   <screen_name>Napebar23Perez</screen_name>
+  </user>
+  .
+  .
+  .
+ </cluster>
  <cluster cluster_id="2" size="3">
   <user>MadridReal</user>
   <user>nada1998</user>
