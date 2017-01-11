@@ -47,12 +47,12 @@ Output:
 ```
 
 ## Check a Twitter Account
-Given a Twitter user name, the "check_user" function checks whether or not DeBot has detected the given account as a bot so far. If yes, it also returns the date of detection and the number of times that account was detected as a bot on that date. In the following example, we query the account "loveforlover_01", and the output shows that DeBot detected this account as a bot once on 2015-10-28, and 4 times on 2015-12-04.  
+Given a Twitter user name, the "check_user" function checks whether or not DeBot has detected the given account as a bot so far. If yes, it also returns the date of detection and the number of times that account was detected as a bot on that date. In the following example, we query the account "@loveforlover_01", and the output shows that DeBot detected this account as a bot once on 2015-10-28, and 4 times on 2015-12-04. You can also check a user by its Twitter ID.
 ```python
 import debot
 
 db = debot.DeBot('your_api_key')
-db.check_user('loveforlover_01')
+db.check_user('@loveforlover_01')
 ```
 
 Output:
@@ -77,6 +77,60 @@ Output:
  </user>
 </response>
 ```
+
+## Get Frequent Bots
+Using this function, the user can get the list of bots which appear in our archive more than a given number of times. The input of the function is the minimum number of times the bots are appeared in our archive. The output is a list of bots with number of times each of them has been detected.
+```python
+import debot
+
+db = debot.DeBot('your_api_key')
+db.get_frequent_bots(20)
+```
+
+Output:
+```xml
+<?xml version="1.0"?>
+<response status="success">
+ <user>
+  <id>12359852135</id>
+  <frequency>102</frequency>
+  <screen_names>
+   <screen_name>maFan</screen_name>
+   <screen_name>burgerFan</screen_name>
+   <screen_name>mama_mia</screen_name>
+  </screen_names>
+ </user>
+</response>
+```
+
+## Get Bots Related To a Topic
+Given a topic, this function returns all bots who were associated with that topic at some point in the past. It also provides the corresponding dates.
+```python
+import debot
+
+db = debot.DeBot('your_api_key')
+db.get_related_bots('election2016')
+```
+
+Output:
+```xml
+<?xml version="1.0"?>
+<response status="success">
+ <topic title="election2016">  
+  <user>
+   <id>12359852135</id>
+   <screen_name>m_arrioja</screen_name>
+   <date>2016-10-22</date>
+  </user>
+  <user>
+   <id>3562489511</id>
+   <screen_name>DNC_</screen_name>
+   <date>2016-10-22</date>
+  </user>
+ </topic>
+</response>
+```
+
 
 ## Dependencies
 
