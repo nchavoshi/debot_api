@@ -5,7 +5,7 @@ class DeBot(object):
 	
 	def __init__(self, api_key):
 		self.api_key = api_key	
-		self._api_endpoint = 'http://cs.unm.edu/~chavoshi/debot/api.php'
+		self._api_endpoint = 'https://www.cs.unm.edu/~chavoshi/debot/api.php'
 
 	def daily_debot(self, limit=5000):
 		r = requests.post(self._api_endpoint, data={'api_key':self.api_key, 'srv_type':'1', 'limit':limit})
